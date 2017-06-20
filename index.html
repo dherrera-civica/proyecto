@@ -4,10 +4,149 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/styles.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="img/genetics.png" class="img-navbar"> 
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#download">Download</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        
+         <!-- Intro -->
+         <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="">
+                        <video loop muted autoplay class="fullscreen-bg_video">
+                            <source src="video/geneticengineering.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                        <div class="row fg-video">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h1 class="brand-heading">Biotechnology today</h1>
+                                <p class="intro-text">Know everything that is happening in today´s science.
+                                    <br></p>
+                                <a href="#about" class="btn btn-circle page-scroll">
+                                    <i class="fa fa-angle-double-down animated color-button"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+            <!-- Portfolio Grid Section -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <padding>
+                        <h2>Choose a theme</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row margin-top">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/labflasks.png" class="img-responsive img-grid" alt="Lab flasks">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/einstein.png" class="img-responsive img-grid" alt="Einstein">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/atom color.jpeg" class="img-responsive img-grid" alt="Atom">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/microscope blue.png" class="img-responsive img-grid" alt="Microscope">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/dnahelix.png" class="img-responsive img-grid" alt="Safe">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/microbiology1.png" class="img-responsive img-grid" alt="Submarine">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <script>
+            $(document).ready(function(){
+                alert ("todo bien")
+            });
+        </script> -->
     </body>
 </html>
