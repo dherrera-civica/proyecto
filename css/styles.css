@@ -118,6 +118,8 @@
   }
 }
 
+
+
 .color-button{
   color: white;
 }
@@ -241,9 +243,91 @@ section.success {
 }
 
 .fg-video{
-  background-color: rgba(255, 188, 156, 0.5)
+  column-fill: rgba(255, 188, 156, 0.5)
+}
+
+.bg-dark {
+  background-color: lightseagreen;
+  color: white;
+  
+}
+
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-xl {
+  padding: 15px 30px;
+}
+.btn-default {
+  color: #222222;
+  background-color: white;
+  border-color: white;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+footer {
+  padding: 50px 0 65px;
+}
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.fa-inverse {
+    color: #fff;
+}
+
+.fa-stack-1x {
+    line-height: inherit;
+}
+
+.fa-stack-1x, .fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.call-to-action h2{
+  margin:0 auto 20px;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.sign-in{
+  background-color: lightseagreen;
+}
+
+.section-signin{
+    padding: 200px 0;
 }
 
 
-
-
+.btn-signin {
+    color: #fff;
+    background-color: lightseagreen;
+    border-color: lightseagreen;
+    font-weight: 700;
+}
