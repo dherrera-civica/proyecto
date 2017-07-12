@@ -331,3 +331,8 @@ aside {
     border-color: lightseagreen;
     font-weight: 700;
 }
+
+.img-opacity {
+    opacity: 0.4;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
