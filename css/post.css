@@ -9,11 +9,12 @@
   margin-bottom: 50px;
   
 }
-.intro-header  .transbox {
-  background-color: #777777;
-  opacity: 0.6;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+
+.image-main{
+  background-image: url('../img/gmos1.png'); 
 }
+
+
 h1{
   font-weight: bold;
   color: #000000;
