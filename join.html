@@ -74,6 +74,8 @@
     <section class="section-signin"> 
         <div class="container">
             <h1 class="text-center margin-bottom">Join</h1>
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false">
+            </div>
             <fb:login-button  scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -139,6 +141,7 @@
             </div>
         </div>
     </footer>
+    
     <script>
         function checkLoginState() {
             FB.getLoginStatus(function(response) {
