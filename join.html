@@ -10,22 +10,22 @@
 
 <body>
 
-    <script>
-         window.fbAsyncInit = function() {
+     <script>
+        window.fbAsyncInit = function() {
             FB.init({
-            appId      : '349228708829543',
-            cookie     : true,
-            xfbml      : true,
-            version    : 'v2.8'
+            appId            : '349228708829543',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.9'
             });
-            FB.AppEvents.logPageView();   
+            FB.AppEvents.logPageView();
         };
 
         (function(d, s, id){
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
             js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -58,7 +58,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Sign up</a>
+                        <a class="page-scroll" href="join.html">Join</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="signin.html">Sign in</a> 
@@ -96,7 +96,7 @@
                             <label><input type="checkbox"> I agree to all Terms and Conditions</label>
                         </div>
                         <button type="submit" class="btn btn-default btn-signin">Create account</button>
-                        <a href="signin.html" class="btn btn-default btn-signin">Sign in</a>
+                        <a href="profile.html" class="btn btn-default btn-signin">Sign in</a>
                     </form>
                 </div>
             </div>
@@ -142,13 +142,13 @@
         </div>
     </footer>
     
-    <script>
+    <script> 
         function checkLoginState() {
             FB.getLoginStatus(function(response) {
                 statusChangeCallback(response);
             });
-            }
-     </script>
+        }
+    </script>
 
 </body>
 
