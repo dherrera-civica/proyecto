@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/signin.css" rel="stylesheet" media="screen">
-    <link href="css/post.css" rel="stylesheet" media="screen">
+    <link href="css/profile.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Custom Fonts -->
@@ -45,7 +45,7 @@
                         <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Diana D'Herrera
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">New story</a></li>
+                            <li><a href="newstory.html">New story</a></li>
                             <li><a href="#">Edit profile</a></li>
                             <li><a href="#">Sign out</a></li>
                         </ul>
@@ -61,22 +61,121 @@
 
 
 
-    <!-- Post -->
-     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header image-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                            <h1>GMO's: Salvation or damnation</h1>
-                            <h2 class="subheading"></h2>
-                    </div>
+    <!-- Profile -->
+    <div class="container section">
+        <div class="col-lg-12 col-sm-12">
+            <div class="card hovercard">
+                <div class="card-background">
+                    <img class="card-bkimg" alt="" src="img/perfil.jpg">
+                    <!-- http://lorempixel.com/850/280/people/9/ -->
+                </div>
+                <div class="useravatar">
+                    <img alt="" src="img/perfil.jpg">
+                </div>
+                <div class="card-info"> <span class="card-title">Diana D'Herrera</span>
+
+                </div>
+            </div>
+            <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <div class="hidden-xs">Stories</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                        <div class="hidden-xs">Favorites</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <div class="hidden-xs">Following</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1">
+                     <!-- aquí empieza la sección de los posts dentro de la tab -->
+                          <section class="blog-article">
+                                <div class="blog-title">
+                                    <div class="row">
+                                        <div class="col-md-6 pull-left">
+                                            <p>Recent stories <span class="color">.</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="col-md-6 col-sm-6 col-txt">
+                                                    <time class="ac">23.6.2017</time>
+                                                    <p>How biotechnology could generate the next crisis.</p>
+                                                    <a href="#" class="gmRed">Read more - ></a>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-img">
+                                                    <img src="img/labflasks.png" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="col-md-6 col-sm-6 col-txt">
+                                                    <time class="ac">23.6.2017</time>
+                                                    <p>Why biotechnology is dangerous in the wrong hands.</p>
+                                                    <a href="#" class="gmRed">Read more - ></a>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-img">
+                                                    <img src="http://www.starsia.patrikkopco.eu/assets/images//second.jpg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="col-md-6 col-sm-6 col-txt">
+                                                    <time class="ac">23.6.2017</time>
+                                                    <p>Fruitcake macaroon chupa chups fruitcake jelly-o lollipop macaroon marzipan.</p>
+                                                    <a href="#" class="gmRed">Read more - ></a>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-img">
+                                                    <img src="http://www.starsia.patrikkopco.eu/assets/images//third.jpg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="col-md-6 col-sm-6 col-txt">
+                                                    <time class="ac">23.6.2017</time>
+                                                    <p>Fruitcake macaroon chupa chups fruitcake .</p>
+                                                    <a href="#" class="gmRed">Read more - ></a>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-img">
+                                                    <img src="http://www.starsia.patrikkopco.eu/assets/images//fourth.jpg" alt="" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="tab-pane fade in" id="tab2">
+                        <h3>This is tab 2</h3>
+                        </div>
+                        <div class="tab-pane fade in" id="tab3">
+                        <h3>This is tab 3</h3>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-    </header>
-   
+    </div>
 
     
 
@@ -117,20 +216,12 @@
         </div>
     </footer>
     <script>
-    
-            $('#comments-container').comments({
-            profilePictureURL: 'https://app.viima.com/static/media/user_profiles/user-icon.png',
-            getComments: function(success, error) {
-                var commentsArray = [{
-                    id: 1,
-                    created: '2015-10-01',
-                    content: 'Lorem ipsum dolort sit amet',
-                    fullname: 'Simon Powell',
-                    upvote_count: 2,
-                    user_has_upvoted: false
-                }];
-                success(commentsArray);
-            }
+            $(document).ready(function() {
+            $(".btn-pref .btn").click(function () {
+                $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+                // $(".tab").addClass("active"); // instead of this do the below 
+                $(this).removeClass("btn-default").addClass("btn-primary");   
+            });
             });
 
         
